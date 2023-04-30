@@ -1,8 +1,11 @@
 'use strict'
 
-let salesTitle = document.getElementById('salesTitle');
-salesTitle.textContent= "Pat's Coffee Shop Sales Info";
+function getRandomInt (min,max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max-min) + min);
+}
 
-let salesTable = document.getElementById("sales-table");
+
 
  
