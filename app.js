@@ -1,10 +1,8 @@
 'use strict'
 
-let Hours = []
-functionRandom(min, max);
-let num = Math.floor(Math.random()*(max - min + 1) + min);
-return num;
+let salesTitle = document.getElementById('salesTitle');
+salesTitle.textContent= "Pat's Coffee Shop Sales Info";
 
-    
+let salesTable = document.getElementById("sales-table");
 
  

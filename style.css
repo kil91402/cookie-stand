@@ -2,7 +2,7 @@ body {
     background-image: url("Coffee.jpg");
     background-repeat: space;
     background-size: 140px;
-    
+   
   }
   
   #background {
@@ -35,7 +35,7 @@ body {
   section {
     border: 1px solid black;
     background-color: white;
-    
+  
   }
   
   #about {
