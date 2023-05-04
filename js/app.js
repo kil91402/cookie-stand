@@ -13,6 +13,10 @@ function storeInfo(location, minCus, maxCus, avgCookieSales) {
   this.maxCus = maxCus;
   this.avgCookieSales = avgCookieSales;
 
+function getRandomInt(minCus,maxCus) {
+    minCus= Math.ceil(minCus);
+    maxCus= Math.floor(maxCus);
+
 
 
 }
