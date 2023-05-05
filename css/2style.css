@@ -1,4 +1,24 @@
 body {
-    background: linear-gradient(#696b85, #9198e5);
-    background-repeat: space;
-    background-size: 140px;
+    background: linear-gradient(to right, rgba(233,212,179,1) 0%, rgba(182,141,76,1) 49%, rgba(193,158,103,1) 50%, rgba(243,226,199,1) 100%);
+}    
+
+img {
+        display: block;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+h1 {
+    
+    text-align: center;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
