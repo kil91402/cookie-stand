@@ -10,3 +10,8 @@ let finalPrice = totalPrice + (totalPrice * salesTax/100);
 
 
 alert(`Your final price is ${finalPrice}`);
+
+document.getElementById("Cost").textContent = totalPrice
+document.getElementById("tax").textContent = salesTax
+document.getElementById("Final Cost").textContent = finalPrice
+
