@@ -71,7 +71,7 @@ console.log("getRandomInt");
 console.log(Tokyo8);     
 console.log(Tokyo8);
 
-letTokyo9  = getRandomInt(3, 24);
+let Tokyo9  = getRandomInt(3, 24);
 let TokyoT1 = 1.2 * Tokyo9;
 
 console.log("getRandomInt");
