@@ -1,25 +1,41 @@
 'use strict';
 
-let Seattle = new Location('Seattle', 23, 65, 6.3);
-let Tokyo = new Location('Tokyo', 3, 24, 1.2);
-let Dubai = new Location('Dubai', 11, 38, 3.7);
-let Paris = new Location('Paris', 20, 38, 2.3);
-let Lima = new Location('Lima', 2, 16, 4.6);
+let location1 = Seattle
+let min = 23
+let max = 65
+let avg = 6.3
+  
+let location2 = Tokyo
+min = 3
+max = 24 
+avg = 1.2
+
+let location3 = Dubai
+min = 11
+max = 38
+avg = 3.7
+
+let location4 = Paris
+min = 20
+max = 38
+avg = 2.3
+
+let location5 = Lima
+min = 2
+max = 16
+avg = 4.6
 
 
-function storeInfo(location, minCus, maxCus, avgCookieSales) {
-  this.location = location;
-  this.minCus = minCus;
-  this.maxCus = maxCus;
-  this.avgCookieSales = avgCookieSales;
-
-function getRandomInt(minCus,maxCus) {
-    minCus= Math.ceil(minCus);
-    maxCus= Math.floor(maxCus);
-
-
-
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); 
 }
+
+
+
+
+
 
 
 
