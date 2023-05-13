@@ -14,7 +14,6 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
 }
 
-
 let Seattle8am = getRandomInt(23, 65);
 let Total8am = 6.3 * Seattle8am;
 
