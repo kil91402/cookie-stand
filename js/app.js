@@ -3,7 +3,7 @@
 let hours = ['8am', '9am', '10am', '11am', '12pm']
 let customers = 0
 
-let Location = Seattle
+let Location = 'Seattle'
 let min = 23
 let max = 65
 let avg = 6.3
@@ -19,7 +19,17 @@ let y = getRandomInt(23, 65);
 console.log("getRandomInt");
 console.log(y);     
 
-Location = Tokyo
+let salesPageElement = document.getElementById('sales-page');
+
+let salesTaxElement = document.createElement('i');
+salesTaxElement.textContent = salesTax;
+salesPageElement.appendChild(salesTaxElement);
+
+document.getElementById("Cost").textContent = totalPrice
+document.getElementById("tax").textContent = salesTax
+document.getElementById("Final Cost").textContent = finalPrice
+
+Location = 'Tokyo'
 min = 3
 max = 24
 avg = 1.2
@@ -35,7 +45,7 @@ let x = getRandomInt(3, 24);
 console.log("getRandomInt");
 console.log(x);     
 
-Location = Dubai
+Location = 'Dubai'
 min = 11
 max = 38
 avg = 3.7
@@ -51,7 +61,7 @@ let a = getRandomInt(11, 38);
 console.log("getRandomInt");
 console.log(a);     
 
-Location = Paris
+Location = 'Paris'
 min = 20
 max = 38
 avg = 2.3
@@ -67,7 +77,7 @@ let b = getRandomInt(20, 38);
 console.log("getRandomInt");
 console.log(b);     
 
-Location = Lima
+Location = 'Lima'
 min = 2
 max = 16
 avg = 4.6
