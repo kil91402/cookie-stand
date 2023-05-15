@@ -21,12 +21,28 @@ console.log("getRandomInt");
 console.log(Seattle8am);     
 console.log(Total8am);
 
+let customersElement = document.getElementById('customers');
+
+let Total8amElement = document.createElement('i');
+Total8amElement.textContent = Total8am;
+customersElement.appendChild(Total8amElement);
+
+document.getElementById("8am").textContent = Total8am
+
 let Seattle9am = getRandomInt(23, 65);
 let Total9am = 6.3 * Seattle9am;
 
 console.log("getRandomInt");
 console.log(Seattle9am);     
 console.log(Total9am);
+
+customersElement = document.getElementById('customers');
+
+let Total9amElement = document.createElement('i');
+Total9amElement.textContent = Total9am;
+customersElement.appendChild(Total9amElement);
+
+document.getElementById("9am").textContent = Total9am
 
 let Seattle10am = getRandomInt(23, 65);
 let Total10am = 6.3 * Seattle10am;
@@ -35,12 +51,28 @@ console.log("getRandomInt");
 console.log(Seattle10am);     
 console.log(Total10am);
 
+customersElement = document.getElementById('customers');
+
+let Total10amElement = document.createElement('i');
+Total10amElement.textContent = Total10am;
+customersElement.appendChild(Total10amElement);
+
+document.getElementById("10am").textContent = Total10am
+
 let Seattle11am = getRandomInt(23, 65);
 let Total11am = 6.3 * Seattle11am;
 
 console.log("getRandomInt");
 console.log(Seattle11am);     
 console.log(Total11am);
+
+customersElement = document.getElementById('customers');
+
+let Total11amElement = document.createElement('i');
+Total11amElement.textContent = Total11am;
+customersElement.appendChild(Total11amElement);
+
+document.getElementById("11am").textContent = Total11am
 
 let Seattle12pm = getRandomInt(23, 65);
 let Total12pm = 6.3 * Seattle12pm;
@@ -49,6 +81,13 @@ console.log("getRandomInt");
 console.log(Seattle12pm);     
 console.log(Total12pm);
 
+customersElement = document.getElementById('customers');
+
+let Total12pmElement = document.createElement('i');
+Total12pmElement.textContent = Total12pm;
+customersElement.appendChild(Total12pmElement);
+
+document.getElementById("12pm").textContent = Total12pm
 
 Location = 'Tokyo'
 min = 3
