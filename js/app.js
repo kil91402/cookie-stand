@@ -19,7 +19,7 @@ function getRandomInt(min, max) {
 
 for (let store of storesArray) { 
   console.log("store", store);
-}
+
 
   for (let hour of hours) { 
 
@@ -28,5 +28,6 @@ for (let store of storesArray) {
     store["salesPerHour"].push(salesAmount);
       
 } 
-
+}
 console.log("storesArray", storesArray);
+
