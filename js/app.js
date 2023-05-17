@@ -31,6 +31,13 @@ for (let store of storesArray) {
 }
 console.log("storesArray", storesArray);
 
+let storeElement = document.getElementById('store');
+
+let salesAmountElement = document.createElement('li');
+salesAmountElement.textContent = salesAmount;
+storeElement.appendChild(salesAmount);
+
+document.getElementById("8am","9am", "10am", "11am", "12pm").textContent = salesAmount
 
 
 
