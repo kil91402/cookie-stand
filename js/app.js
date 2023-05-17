@@ -31,3 +31,9 @@ for (let store of storesArray) {
 }
 console.log("storesArray", storesArray);
 
+
+
+
+
+
+
