@@ -61,6 +61,7 @@ for (let store of storesArray) {
 console.log("storesArray", storesArray);
 
 //DOM Manipulation
+
 let parent = document.getElementById("store");
 for (let store of storesArray) {
   let headingElement = document.createElement("h2");
