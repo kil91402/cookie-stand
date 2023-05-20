@@ -61,6 +61,11 @@ for (let store of storesArray) {
 }
 console.log("storesArray", storesArray);
 
+let state = {
+  tableElement: document.getElementById("sales"),
+  sales: [],
+};
+
 function sales(hours, store) {
   this.hours = hours;
   this.store = store;
