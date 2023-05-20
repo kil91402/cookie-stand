@@ -62,23 +62,23 @@ for (let store of storesArray) {
 console.log("storesArray", storesArray);
 
 let state = {
-  tableElement: document.getElementById("sales"),
-  sales: [],
-};
+  tableElement: document.getElementById("sales")
+}
+state.tableElement.appendChild;
 
-function sales(hours, store) {
-  this.hours = hours;
-  this.store = store;
+for (i=0, i < storesArray.length; i++) {
+  storesArray[i].salesPerHour();
+  let salesRowElement = document.createElement("tr");
+  let salesDataElement = document.createElement("td");
+  salesDataElement.textContent = storesArray[i].store;
+  salesRowElement.appendChild(salesDataElement);
+  state.tableElement.apppendChild(salesRowElement);
+
+
+
 }
 
-sales.prototype.render = function () {
-  let salesRow = document.createElement("tr");
 
-  let hours = document.createElement("td");
-  hours.textContent = this.hours;
-  salesRow.appendChild(hours);
 
-  let store = document.createElement("td");
-  store.textContent = this.store;
-  salesRow.appendChild(store);
-};
+
+
