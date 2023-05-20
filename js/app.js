@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable quotes */
 "use strict";
 
 let hours = ["8am", "9am", "10am", "11am", "12pm"];
@@ -62,6 +64,7 @@ console.log("storesArray", storesArray);
 
 //DOM Manipulation
 
+// eslint-disable-next-line no-redeclare
 let parent = document.getElementById("store");
 for (let store of storesArray) {
   let headingElement = document.createElement("h2");
