@@ -82,10 +82,11 @@ for (let store of storesArray) {
 }
 
 let div = document.getByElementId("sales");
-  let table = document.createElement('table');
-  table.style.border = '1' 
-  let tableBody = document.createElement('tb')
+let table = document.createElement("table");
+table.style.border = "1";
+let tableBody = document.createElement("tb");
 
-  for (let i = 0; i < 5; i++) {
-    let tr = document.createElement('tr');
-    tableBody.appendChild(tr);
+for (let i = 0; i < 5; i++) {
+  let tr = document.createElement("tr");
+  tableBody.appendChild(tr);
+}
