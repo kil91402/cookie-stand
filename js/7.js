@@ -52,6 +52,25 @@ let headingRowElement = document.createElement("tr");
 
 for (let i = 0; i < hours.length; i++) {
   let tableDataElement = document.createElement("td");
-  tableDataElement.textContent = " " + hours[i];
+  tableDataElement.textContent = hours[i];
   headingRow.appendChild(tableDataElement);
+}
+
+let tableDataElement2 = document.createElement("td");
+tableDataElement2.textContent = "Daily Location Total";
+headingRow.appendChild(tableDataElement2);
+
+let headingRow2Element = document.createElement("tr");
+
+for (let store of storesArray) {
+  let tableDataElement3 = document.createElement("td");
+  tableDataElement3.textContent = store.store;
+  headingRow2Element.appendChild(tableDataElement3);
+
+  for (let i = 0; i < store.salesPerHour.length; i++) {
+    let TableData2Element = document.createElement("td");
+    TableData2Element.textContent =
+      hours[i] + ": " + store.salesPerHour[i] + " Cookies";
+    parent.appendChild(TableData2Element);
+  }
 }
