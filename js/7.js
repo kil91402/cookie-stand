@@ -52,6 +52,6 @@ let headingRowElement = document.createElement("tr");
 
 for (let i = 0; i < hours.length; i++) {
   let tableDataElement = document.createElement("td");
-  tableDataElement.textContent = hours[i];
+  tableDataElement.textContent = "" + hours[i];
   headingRow.appendChild(tableDataElement);
 }
