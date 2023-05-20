@@ -61,6 +61,7 @@ for (let store of storesArray) {
 }
 console.log("storesArray", storesArray);
 
+function table(){
 let state = {
   tableElement: document.getElementById("sales")
 }
@@ -74,9 +75,21 @@ for (i=0, i < storesArray.length; i++) {
   salesRowElement.appendChild(salesDataElement);
   state.tableElement.apppendChild(salesRowElement);
 
+for (x = 0; x < hours.length; x++) {
+  let salesDataElement2 = document.createElement("td");
+  salesDataElement2.textContent = storesArray[i].salesAmount[x];
+  salesRowElement.appendChild(salesDataElement2);
+}  
 
-
+let salesTotalData = document.createElement("td");
+salesTotalData.textContent = storesArray[i].store.subTotal;
 }
+document.getElementById("sales").appendChild(state);
+};
+
+
+
+
 
 
 
