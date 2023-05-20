@@ -49,8 +49,9 @@ function getRandomInt(min, max) {
 let tableElement = document.getElementById("sales");
 let headingRow = document.getElementById("heading-row");
 let headingRowElement = document.createElement("tr");
-let tableDataElement = document.createElement("td");
 
-for (let i = 0; i < hours.length; i++) {}
-
-headingRow.appendChild(tableDataElement);
+for (let i = 0; i < hours.length; i++) {
+  let tableDataElement = document.createElement("td");
+  tableDataElement.textContent = hours[i];
+  headingRow.appendChild(tableDataElement);
+}
