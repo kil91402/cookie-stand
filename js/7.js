@@ -60,3 +60,20 @@ for (let store of storesArray) {
   }
 }
 console.log("storesArray", storesArray);
+
+function sales(hours, store) {
+  this.hours = hours;
+  this.store = store;
+}
+
+sales.prototype.render = function () {
+  let salesRow = document.createElement("tr");
+
+  let hours = document.createElement("td");
+  hours.textContent = this.hours;
+  salesRow.appendChild(hours);
+
+  let store = document.createElement("td");
+  store.textContent = this.store;
+  salesRow.appendChild(store);
+};
