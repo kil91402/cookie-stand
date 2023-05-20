@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 let hours = ["8am", "9am", "10am", "11am", "12pm"];
 
@@ -41,38 +41,21 @@ let storesArray = [
 ];
 
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
-  }
-  
-  //making calculations
-  for (let store of storesArray) {
-    console.log("store", store);
-    store.subTotal = 0;
-    for (let hour of hours) {
-      let randomInteger = getRandomInt(store["minCust"], store["maxCust"]);
-      let salesAmount = randomInteger * store["avgCookiesPerSale"];
-      salesAmount = Math.ceil(salesAmount);
-      store["salesPerHour"].push(salesAmount);
-      store.subTotal += salesAmount;
-    }
-  }
-  console.log("storesArray", storesArray);
-  
-  let parent = document.getElementById("sales");
-  let tableElement = document.createElement('table');
-  parent.appendChild(tableElement)
-
-  let state = {
-    tableElement: document.getElementById("sales")
-  }
-  state.tableElement.appendChild
-
-sales.prototype.render = function() {
-  let salesRow = document.createElement("tr");
-  let salesData = document.createElement("td");
-  sales.data.textContent = salesPerHour
-  salesRow.appendChild(salesData)
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
 }
-  
+
+//making calculations
+for (let store of storesArray) {
+  console.log("store", store);
+  store.subTotal = 0;
+  for (let hours of hours) {
+    let randomInteger = getRandomInt(store["minCust"], store["maxCust"]);
+    let salesAmount = randomInteger * store["avgCookiesPerSale"];
+    salesAmount = Math.ceil(salesAmount);
+    store["salesPerHour"].push(salesAmount);
+    store.subTotal += salesAmount;
+  }
+}
+console.log("storesArray", storesArray);
