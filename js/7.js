@@ -64,20 +64,15 @@ function getRandomInt(min, max) {
   let tableElement = document.createElement('table');
   parent.appendChild(tableElement)
 
-  let row = document.createElement('tr');
-  tableElement.appendChild(row);
-
-  let TableHeadingElement = document.createElement("th");
-  row.appendChild(TableHeadingElement);
-
-  for (let i = 0; i < hours.length; i++) {
-    let TableHeadingElement = document.createElement("th");
-    TableHeadingElement.textContent =
-      hours[i];
-    row.appendChild(TableHeadingElement);
+  let state = {
+    tableElement: document.getElementById("sales")
   }
+  state.tableElement.appendChild
 
-  TableHeadingElement = document.createElement("th");
-  TableHeadingElement.textContent = "Daily Location Total";
-  row.appendChild(TableHeadingElement);
+sales.prototype.render = function() {
+  let salesRow = document.createElement("tr");
+  let salesData = document.createElement("td");
+  sales.data.textContent = salesPerHour
+  salesRow.appendChild(salesData)
+}
   
