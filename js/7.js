@@ -64,10 +64,11 @@ console.log("storesArray", storesArray);
 function table(){
 let state = {
   tableElement: document.getElementById("sales")
-}
+  }
+
 state.tableElement.appendChild;
 
-for (i=0, i < storesArray.length; i++) {
+for (i = 0, i < storesArray.length; i++) {
   storesArray[i].salesPerHour();
   let salesRowElement = document.createElement("tr");
   let salesDataElement = document.createElement("td");
@@ -86,6 +87,8 @@ salesTotalData.textContent = storesArray[i].store.subTotal;
 }
 document.getElementById("sales").appendChild(state);
 };
+
+table();
 
 
 
