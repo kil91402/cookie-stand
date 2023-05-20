@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 "use strict";
 
 let hours = ["8am", "9am", "10am", "11am", "12pm"];
@@ -50,7 +51,7 @@ function getRandomInt(min, max) {
 for (let store of storesArray) {
   console.log("store", store);
   store.subTotal = 0;
-  for (let hours of hours) {
+  for (let hour of hours) {
     let randomInteger = getRandomInt(store["minCust"], store["maxCust"]);
     let salesAmount = randomInteger * store["avgCookiesPerSale"];
     salesAmount = Math.ceil(salesAmount);
