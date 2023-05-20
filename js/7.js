@@ -81,12 +81,22 @@ for (let store of storesArray) {
   parent.appendChild(subTotalElement);
 }
 
-let div = document.getByElementId("sales");
-let table = document.createElement("table");
-table.style.border = "1";
-let tableBody = document.createElement("tb");
+parent = document.getElementById("sales");
+let tableElement = document.createElement("table");
+parent.appendChild(tableElement);
 
-for (let i = 0; i < 5; i++) {
-  let tr = document.createElement("tr");
-  tableBody.appendChild(tr);
+let row = document.createElement("tr");
+tableElement.appendChild(row);
+
+let TableHeadingElement = document.createElement("th");
+row.appendChild(TableHeadingElement);
+
+for (let i = 0; i < hours.length; i++) {
+  let TableHeadingElement = document.createElement("th");
+  TableHeadingElement.textContent = hours[i];
+  row.appendChild(TableHeadingElement);
 }
+
+TableHeadingElement = document.createElement("th");
+TableHeadingElement.textContent = "Daily Location Total";
+row.appendChild(TableHeadingElement);
