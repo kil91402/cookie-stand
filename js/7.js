@@ -61,40 +61,31 @@ for (let store of storesArray) {
 }
 console.log("storesArray", storesArray);
 
-function table(){
-let state = {
-  tableElement: document.getElementById("sales")
+//DOM Manipulation
+
+// eslint-disable-next-line no-redeclare
+let parent = document.getElementById("store");
+for (let store of storesArray) {
+  let headingElement = document.createElement("h2");
+  headingElement.textContent = store.store;
+  parent.appendChild(headingElement);
+
+  for (let i = 0; i < store.salesPerHour.length; i++) {
+    let liElement = document.createElement("li");
+    liElement.textContent =
+      hours[i] + ": " + store.salesPerHour[i] + " Cookies";
+    parent.appendChild(liElement);
   }
-
-state.tableElement.appendChild;
-
-for (i = 0, i < storesArray.length; i++) {
-  storesArray[i].salesPerHour();
-  let salesRowElement = document.createElement("tr");
-  let salesDataElement = document.createElement("td");
-  salesDataElement.textContent = storesArray[i].store;
-  salesRowElement.appendChild(salesDataElement);
-  state.tableElement.apppendChild(salesRowElement);
-
-for (x = 0; x < hours.length; x++) {
-  let salesDataElement2 = document.createElement("td");
-  salesDataElement2.textContent = storesArray[i].salesAmount[x];
-  salesRowElement.appendChild(salesDataElement2);
-}  
-
-let salesTotalData = document.createElement("td");
-salesTotalData.textContent = storesArray[i].store.subTotal;
+  let subTotalElement = document.createElement("li");
+  subTotalElement.textContent = "Total: " + store.subTotal + " Cookies";
+  parent.appendChild(subTotalElement);
 }
-document.getElementById("sales").appendChild(state);
-};
 
-table();
+let div = document.getByElementId("sales");
+  let table = document.createElement('table');
+  table.style.border = '1' 
+  let tableBody = document.createElement('tb')
 
-
-
-
-
-
-
-
-
+  for (let i = 0; i < 5; i++) {
+    let tr = document.createElement('tr');
+    tableBody.appendChild(tr);
