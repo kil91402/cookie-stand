@@ -66,11 +66,10 @@ for (let store of storesArray) {
   let tableDataElement3 = document.createElement("td");
   tableDataElement3.textContent = store.store;
   headingRow2Element.appendChild(tableDataElement3);
-
-  for (let i = 0; i < store.salesPerHour.length; i++) {
-    let TableData2Element = document.createElement("td");
-    TableData2Element.textContent =
-      hours[i] + ": " + store.salesPerHour[i] + " Cookies";
-    parent.appendChild(TableData2Element);
-  }
+}
+for (let i = 0; i < store.salesPerHour.length; i++) {
+  let TableData2Element = document.createElement("td");
+  TableData2Element.textContent =
+    hours[i] + ": " + store.salesPerHour[i] + " Cookies";
+  parent.appendChild(TableData2Element);
 }
