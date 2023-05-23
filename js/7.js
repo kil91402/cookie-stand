@@ -76,6 +76,7 @@ headingRow.appendChild(tableDataElement2);
 for (let store of storesArray) {
   let bodyRowElement = document.createElement("tr");
   let tableDataElement3 = document.createElement("td");
+  let tdElement = document.createElement("td");
   tableDataElement3.textContent = store.store;
   bodyRowElement.appendChild(tableDataElement3);
 
