@@ -67,6 +67,10 @@ body {
     text-align: center;
   }
   
+  #productLink {
+    text-align: center;
+  }
+
   #salesLink {
     width: 80%;
     margin: auto;
