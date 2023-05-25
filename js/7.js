@@ -63,31 +63,47 @@ let tableElement = document.getElementById("sales");
 let headingRow = document.getElementById("heading-row");
 let headingRowElement = document.createElement("tr");
 
+//Hours in headers
 for (let i = 0; i < hours.length; i++) {
   let tableDataElement = document.createElement("td");
   tableDataElement.textContent = hours[i];
   headingRow.appendChild(tableDataElement);
 }
 
+//Daily Location Total header
 let tableDataElement2 = document.createElement("td");
 tableDataElement2.textContent = "Daily Location Total";
 headingRow.appendChild(tableDataElement2);
 
+//Stores Row
 for (let store of storesArray) {
   let bodyRowElement = document.createElement("tr");
   let tableDataElement3 = document.createElement("td");
-  let tdElement = document.createElement("td");
   tableDataElement3.textContent = store.store;
   bodyRowElement.appendChild(tableDataElement3);
 
+  //Stores Sales Calculations Data
   for (let i = 0; i < store.salesPerHour.length; i++) {
     let TableData2Element = document.createElement("td");
     TableData2Element.textContent = store.salesPerHour[i];
     bodyRowElement.appendChild(TableData2Element);
   }
 
+  //Daily Location Data for Each
   let tableTotalElement = document.createElement("td");
   tableTotalElement.textContent = store.subTotal;
   bodyRowElement.appendChild(tableTotalElement);
   tableElement.appendChild(bodyRowElement);
+}
+
+let trElement = document.createElement("tr");
+let tdElement = document.createElement("td");
+tdElement.textContent = "Totals";
+tableElement.appendChild(trElement);
+trElement.appendChild(tdElement);
+
+for (let hour of hours) {
+  let dataElement = document.createElement("td");
+  dataElement.textContent = hours.subTotal;
+  trElement.appendChild(dataElement);
 }
