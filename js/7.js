@@ -114,8 +114,6 @@ for (let i = 0; i < hours.length; i++) {
   trElement.appendChild(dataElement);
 }
 //Add all 5 Hourly Totals to get Final Total
-let finalTotal = 0;
 let d2Element = document.createElement("td");
 d2Element.textContent = hours.subTotal;
 trElement.appendChild(d2Element);
-tableElement.appendChild(trElement);
