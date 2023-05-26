@@ -108,8 +108,11 @@ for (let i = 0; i < hours.length; i++) {
 
   for (let j = 0; j < storesArray.length; j++) {
     hourlyTotal += storesArray[j].salesPerHour[i];
+
+    let dataElement = document.createElement("td");
+    dataElement.textContent = hourlyTotal;
+    trElement.appendChild(dataElement);
   }
-  let dataElement = document.createElement("td");
-  dataElement.textContent = hourlyTotal;
-  trElement.appendChild(dataElement);
 }
+
+//Add all 5 Hourly Totals to get Final Total
