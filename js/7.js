@@ -103,18 +103,22 @@ tableElement.appendChild(trElement);
 trElement.appendChild(tdElement);
 
 //Loop thru hours array; for each hour we will loop thru the storesArray and add up each stores sales per hour and store in variable
+let finalTotal = 0;
 for (let i = 0; i < hours.length; i++) {
   let hourlyTotal = 0;
 
   for (let j = 0; j < storesArray.length; j++) {
     hourlyTotal += storesArray[j].salesPerHour[i];
+    finalTotal += hourlyTotal;
   }
+
   let dataElement = document.createElement("td");
   dataElement.textContent = hourlyTotal;
   trElement.appendChild(dataElement);
 }
 //Add all 5 Hourly Totals to get Final Total
-let finalTotal = 0;
+
 let d2Element = document.createElement("td");
 d2Element.textContent = finalTotal;
 trElement.appendChild(d2Element);
+tableElement.appendChild(trElement);

@@ -1,9 +1,19 @@
+body {
+    margin: auto;
+    width: 640 px;
+    padding: 200px;
+    background: linear-gradient(#acc7dd, #151b5a);
+}
+
 table, tr, th, td {
     border: 1px solid;
     text-align: center;
+    
+    
     
 }
 .center {
     margin-left: auto;
     margin-right: auto;
+    
 }
