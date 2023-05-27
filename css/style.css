@@ -1,8 +1,10 @@
 body {
-    background-image: url("/image/Coffee.jpg");
-    background-repeat: space;
-    background-size: 140px;
-   
+  background-image: url("/cookie-stand/image/Coffee.jpg");
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: space;
+  background-size: 140px;
   }
   
   #background {
