@@ -10,15 +10,20 @@
   <body>
     <form id="store-form">
       <fieldset>
-        <label for="store">Store<input type="text" /></label>
-        <label for="min-cust">Min Customer<input type="text" /></label>
-        <label for="max-cust">Max Customer<input type="text" /></label>
-        <label for="avg-cookie-sales"
-          >Avg Cookie Sales<input type="text"
+        <label for="store">Store<input type="text" id="store" /></label>
+        <label for="min-cust"
+          >Min Customer<input type="text" id="min-cust"
         /></label>
-        <input type="submit" />
+        <label for="max-cust"
+          >Max Customer<input type="text" id="max-cust"
+        /></label>
+        <label for="avg-cookie-sales"
+          >Avg Cookie Sales<input type="text" id="avg-cookie=sales"
+        /></label>
+        <button type="submit">Submit</button>
       </fieldset>
     </form>
+    <section id="results"></section>
     <main>
       <div id="store"></div>
       <table id="sales" class="center">
