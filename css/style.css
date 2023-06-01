@@ -20,9 +20,9 @@ h1 {
   color: black;
   height: 180px;
   text-align: center;
-  line-height: 365px;
-  font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 375px;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 h2 {
@@ -41,7 +41,7 @@ section {
 
 #about {
   width: 70%;
-  height: 300px;
+  height: 305px;
   border-radius: 50px;
   margin-left: 200px;
   margin-top: 30px;
@@ -68,11 +68,12 @@ img {
 
 #productLink {
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  display: block;
 }
 
 #americano {
-  width: 10%;
+  width: 5%;
   height: 10%;
 }
 
@@ -81,11 +82,11 @@ img {
   height: 10%;
 }
 #chocolate-chip {
-  width: 10%;
+  width: 5%;
   height: 10%;
 }
 #salmon-cookie {
-  width: 10%;
+  width: 5%;
   height: 10%;
 }
 
