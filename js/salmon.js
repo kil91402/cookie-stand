@@ -14,7 +14,6 @@ alert(`Your final price is ${finalPrice}`);
 let salesPageElement = document.getElementById("sales-page");
 
 let salesTaxElement = document.createElement("i");
-salesTaxElement.textContent = salesTax;
 salesPageElement.appendChild(salesTaxElement);
 
 document.getElementById("Cost").textContent = totalPrice;
