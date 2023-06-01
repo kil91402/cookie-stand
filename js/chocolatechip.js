@@ -17,5 +17,5 @@ salesTaxElement.textContent = salesTax;
 salesPageElement.appendChild(salesTaxElement);
 
 document.getElementById("Cost").textContent = totalPrice;
-document.getElementById("tax").textContent = salesTax;
+document.getElementById("Tax").textContent = salesTax;
 document.getElementById("Final Cost").textContent = finalPrice;
