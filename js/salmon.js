@@ -7,6 +7,7 @@ let quantity = prompt("How many cookies would you like?");
 let Price = salesPrice - (salesPrice * discount) / 100;
 let totalPrice = Price * quantity;
 let finalPrice = totalPrice + (totalPrice * salesTax) / 100;
+finalPrice = finalPrice.toFixed(2);
 
 alert(`Your final price is ${finalPrice}`);
 
