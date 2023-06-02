@@ -135,5 +135,5 @@ function storeNew(event) {
   let avgCookiesPerSales = target.avgCookiesPerSales.value;
 
   let storeNew = new Location(store, minCust, maxCust, avgCookiesPerSales);
-}
+
 formElement.addEventListener("submit", storeNew);
