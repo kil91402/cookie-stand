@@ -122,23 +122,3 @@ let d2Element = document.createElement("td");
 d2Element.textContent = finalTotal;
 trElement.appendChild(d2Element);
 tableElement.appendChild(trElement);
-
-let formElement = document.getElementById("store-form");
-
-function handleSubmit(event) {
-  event.preventDefault();
-
-  let target = event.target;
-
-  let store = target.store.value;
-  let minCust = target.minCust.value;
-  let maxCust = target.maxCust.value;
-  let avgCookiesPerSale = target.avgCookiesPerSale;
-
-  let resultsElement = document.getElementById("results");
-  let storeElement = document.createElement("div");
-  storeElement.textContent = `${store} has a minimum of ${minCust} customers and a maximum of ${maxCust} which averages out to ${avgCookiesPerSale}`;
-  resultsElement.appendChild(storeElement);
-}
-
-formElement.addEventListener("submit", handleSubmit);
