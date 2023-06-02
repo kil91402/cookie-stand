@@ -122,3 +122,18 @@ let d2Element = document.createElement("td");
 d2Element.textContent = finalTotal;
 trElement.appendChild(d2Element);
 tableElement.appendChild(trElement);
+
+//Step 1 get form
+let formElement = document.getElementById("store-form");
+function storeNew(event) {
+  event.preventDefault();
+  let target = event.target;
+
+  let store = target.store.value;
+  let minCust = target.minCust.value;
+  let maxCust = target.maxCust.value;
+  let avgCookiesPerSales = target.avgCookiesPerSales.value;
+
+  let storeNew = new Location(store, minCust, maxCust, avgCookiesPerSales);
+}
+formElement.addEventListener("submit", storeNew);
